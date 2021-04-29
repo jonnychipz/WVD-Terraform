@@ -1,6 +1,6 @@
 variable "location" {
   description = "Location to Create all resources"
-  default = "uksouth"
+  default = "westeurope"
 }
 
 variable "rg-name" {
