@@ -13,7 +13,7 @@ variable "wkspace-name" {
   default = "jonnychipz-wvd-wkspace"
 }
 
-variable "hppooled-name" {
+variable "pooled-hp-name" {
   description = "The name of the WVD pooled hostpool to be created"
   default = "jonnychipz-wvd-pool-hp"
 }
@@ -21,9 +21,4 @@ variable "hppooled-name" {
 variable "appgrp-name" {
   description = "The name of the WVD app group to be created"
   default = "jonnychipz-wvd-desktop-ag"
-}
-
-resource "azurerm_resource_group" "wvdrg" {
-  name     = var.rg-name
-  location = var.location
 }
